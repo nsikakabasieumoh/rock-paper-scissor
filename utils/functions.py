@@ -15,23 +15,36 @@ def computer() -> str:
     """
     return random.choice(choices)
 
-def verified(param1):
+def not_verified(param1):
     """ Check if players entry is choices
 
     :param1: player's entry
     :return: bool
     """
-    if param1 in choices:
+    if param1 not in choices:
         return True
     else:
         return False
     
-def compare(param1, param2):
+def player():
+    # Prevent entry of int or float
+    try:
+        player = input("Enter choice: ").upper()
+    except:
+        return None
+    
+    # Check if entry is either R, P or S
+    if not_verified(player):
+        return None
+    
+    return player
+    
+def compare(param1, param2) -> str:
     """ Check winner
 
     :param1: player's choice
     :param2: computer's choice
-    :return: 
+    :return: str
     """
     diff = assigned[param1] - assigned[param2]
 
@@ -39,3 +52,5 @@ def compare(param1, param2):
         return 'Player Wins'
     elif diff in c_wins:
         return 'Computer Wins'
+    else:
+        return "It's a Draw!"

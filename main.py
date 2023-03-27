@@ -4,18 +4,21 @@ from utils import functions
 rules = "Enter R for Rock, P for Paper and S for Scissor. Enjoy!"
 print(rules)
 
-# Prevent entry of int or float
-try:
-    player = input("Enter choice: ").upper()
-except:
-    print("Check your entry.")
-    quit()
+# Play three rounds
+rounds = 0
+limit = 3
 
-# Check if entry is either R, P or S
-if not functions.verified(player):
-    print("Check your entry.")
-    exit()
+while rounds < limit:
+    # control the rounds
+    rounds += 1
+    r_left = limit - rounds
 
-computer = functions.computer()
-
-print(functions.compare(player, computer))
+    # play the game
+    player = functions.player()
+    if player is None:
+        print(f'Wrong entry. You have {r_left} rounds left.')
+        continue
+    else:
+        computer = functions.computer()
+        result = functions.compare(player, computer)
+        print(f'{result}. You have {r_left} rounds left.')
