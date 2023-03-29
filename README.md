@@ -17,6 +17,7 @@ In this section, I will outline the resources used for this in project.
 - **Python Version:** Python 3.11.2
 
 ## Python Packages Used
+
 - **General Purpose:** General purpose packages like `random`.
 
 ## Code Structure
