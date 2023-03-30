@@ -1,9 +1,9 @@
 # Rock Paper Scissor Game
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nsikakabasieumoh/temperature_convertor)
-![GitHub](https://img.shields.io/github/license/nsikakabasieumoh/temperature_convertor)
-![contributors](https://img.shields.io/github/contributors/nsikakabasieumoh/temperature_convertor)
-![codesize](https://img.shields.io/github/languages/code-size/nsikakabasieumoh/temperature_convertor)
+![GitHub last commit](https://img.shields.io/github/last-commit/nsikakabasieumoh/rock-paper-scissor)
+![GitHub](https://img.shields.io/github/license/nsikakabasieumoh/rock-paper-scissor)
+![contributors](https://img.shields.io/github/contributors/nsikakabasieumoh/rock-paper-scissor)
+![codesize](https://img.shields.io/github/languages/code-size/nsikakabasieumoh/rock-paper-scissor)
 
 Creating a game of Rock Paper Scissors that can be played between a human  player and computer. The computer randomly selects the hand and the player selects a hand. 
 
